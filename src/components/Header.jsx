@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 export default function Header() {
     return (
-        <header>
+     <header>
+        <nav>
+            <ul>
             <Link to="/">
-            <p>Home</p>
+            <li>Home</li>
             </Link>
             <Link to="/produto">
-           <p>Produtos</p> 
+           <li>Produtos</li> 
             </Link>
             <Link to="/oferta">
-           <p> Oferta</p> 
+           <li> Oferta</li> 
             </Link>
-        </header>
+            </ul>
+        </nav>
+     </header>
     )
 }

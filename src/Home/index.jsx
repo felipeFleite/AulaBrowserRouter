@@ -4,6 +4,7 @@ import Header from "../components/Header"
 export default function Home() {
     return(
         <>
+        <Header/>
         <Carousel
         infiniteLoop
         autoPlay
@@ -27,8 +28,6 @@ export default function Home() {
         </div>
 
         </Carousel>
-
-        <Header/>
         </>
     )
 }

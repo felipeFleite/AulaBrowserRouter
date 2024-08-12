@@ -13,13 +13,13 @@ export default function Home() {
         showThumbs={false}
         dynamicHeight
         >
-            
+
         <div>
-        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRicA5AYQwSbfKZZlB52Ar_yLUfdu_mRzTMRA&s" alt="Carro"/>
+        <img src ="https://www.designi.com.br/images/preview/10243023.jpg" alt="Carro"/>
         </div>
 
         <div>
-        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dMRIWoNixPmIw5wfxWm90vHEdE72rPJqkA&s" alt="Foto de homem na frente de um carro"/>
+        <img src ="https://www.designi.com.br/images/preview/11876061.jpg" alt="Foto de homem na frente de um carro"/>
         </div>
 
         <div>

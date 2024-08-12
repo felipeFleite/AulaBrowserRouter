@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Header from "../components/Header"
 export default function Home() {
     return(
         <>
@@ -26,6 +27,8 @@ export default function Home() {
         </div>
 
         </Carousel>
+
+        <Header/>
         </>
     )
 }

@@ -11,6 +11,7 @@ export default function ListaProduto() {
               {
                 listaProduto.map((produto) =>
                 <div key = {produto.id}>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0YQ0U77Xk4LJu3u1-E-0YIxlLRJcneKhOAA1jWlnbcr4i2qP9l_5tYibzA&s"/>
                 <p>{produto.nome}</p>
                 <p>{produto.preco}</p>
                 <button>Comprar</button>

@@ -3,7 +3,7 @@ export default function Header() {
     return (
      <header>
         <nav>
-            <ul>
+            <ul id="lista">
             <Link to="/">
             <li>Home</li>
             </Link>

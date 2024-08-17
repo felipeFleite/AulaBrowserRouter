@@ -1,10 +1,50 @@
-#lista {
+ body{
+  background-color: black
+  }
+
+ #lista {
     background-color: rgb(0, 0, 0);
     list-style: none
   }
   
-li {
+ li {
     color:white;
     display: inline-block;
-    margin-right: 20px
+    margin-right: 20px;
+    font-size: 30px;
   }
+  
+ .text{
+    color:white
+  }
+
+ #produte {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px
+ }
+
+ #cards {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap
+ }
+
+@media (min-width: 2024px) {
+  #produte {
+      gap: 10px;
+      flex-wrap: wrap
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #produte {
+      width: calc(50% - 20px)
+  }
+}
+
+@media (max-width: 280px) {
+  #produte {
+      width: calc(100% - 20px)
+  }
+}

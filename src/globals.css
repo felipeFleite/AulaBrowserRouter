@@ -39,7 +39,9 @@
     align-items: center;
     width: 15%;
  }
-
+ #carrosel {
+  width: 80px;
+ }
  #cards {
   display: flex;
   gap: 100px;

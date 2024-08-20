@@ -1,5 +1,10 @@
+import ListaProduto from "../../components/ListarProdutos"
+import Header from "../../components/Header"
 export default function Produto() {
     return(
-    <h1>Macarrão</h1>
+        <>
+        <Header/>
+        <ListaProduto/>
+        </>
     )
 }

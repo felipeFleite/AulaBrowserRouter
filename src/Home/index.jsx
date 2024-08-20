@@ -20,15 +20,15 @@ export default function Home() {
         >
 
         <div>
-        <img src ="https://cdn.appdealersites.com.br/barigui/eva/conteudo/388.webp" alt="Carro"/>
+        <img src ="https://www.designi.com.br/images/preview/10102113.jpg"/>
         </div>
 
         <div>
-        <img src ="https://cdn.appdealersites.com.br/discasa/agosto/PC%20-%20T-Cross%20(1).webp" alt="Foto de homem na frente de um carro"/>
+        <img src ="img\388_resized_resized.webp"/>
         </div>
 
         <div>
-        <img src ="https://www.designi.com.br/images/preview/10172138.jpg" alt="Carro Branco"/>
+        <img src ="https://www.designi.com.br/images/preview/10172138.jpg"/>
         </div>
 
         </Carousel>

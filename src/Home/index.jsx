@@ -32,6 +32,7 @@ export default function Home() {
         </div>
 
         </Carousel>
+        <h1 id="title">PRODUTOS</h1>
         <ListaProduto/>
         <Footer/>
         </>

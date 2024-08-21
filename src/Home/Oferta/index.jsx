@@ -1,5 +1,10 @@
+import Header from "../../components/Header";
+
 export default function Oferta() {
     return(
-    <h1>Arroz 15% OFF</h1>
+        <>
+        <Header/>
+    <h1 id="title">OFERTAS ESPECIAIS</h1>
+    </>
     )
 }

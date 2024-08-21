@@ -6,13 +6,12 @@ export default function ListaProduto() {
   const precoFinal = function (preco, desconto) {
     if(desconto != 0){
     const transformaNumber = parseFloat(preco.replace('R$ ', '').replace('.', '').replace(',', '.'))
-    const descontoDado = transformaNumber * desconto / 100
-      return descontoDado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    const descontado = transformaNumber - transformaNumber * (desconto/100 )
+      return descontado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }else{
     return preco
   }
 }
-
         const [listaProduto, setProduto] = useState([
           {id: 1, promocao: 25, marca: "Fiat", nome: "Titano", preco: "R$ 219.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/titano.webp"},
           {id: 2, promocao: 0, marca: "Fiat", nome: "500e", preco: "R$ 214.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/500e.webp"},
@@ -42,8 +41,8 @@ export default function ListaProduto() {
                 listaProduto.map((produto) =>
                 <div id ="produte" key = {produto.id}>
                 <img id="carros" src={produto.imgUrl}/>
-                <p id="text">{produto.nome}</p>
-                <p id="text">{precoFinal(produto.preco, produto.promocao)}</p>
+                <h3 id="text">{produto.nome} -{produto.marca}</h3>
+                <h3 id="text">{precoFinal(produto.preco, produto.promocao)}</h3>
                 <button onClick={adicionarPedido}>Comprar</button>
                 </div>
                 )

@@ -7,11 +7,11 @@ import ListarProdutos from '../components/ListarProdutos'
 import { useState } from 'react'
 export default function Home() {
     const [listaProduto, setProduto] = useState([
-        {id: 1, promocao: 25, marca: "Fiat", nome: "Titano", preco: "R$ 219.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/titano.webp"},
-        {id: 2, promocao: 0, marca: "Fiat", nome: "500e", preco: "R$ 214.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/500e.webp"},
-        {id: 3, promocao: 25, marca: "Fiat", nome: "Mobi", preco: "R$ 73.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/mobi.webp"},
-        {id: 4, promocao: 25, marca: "Fiat", nome: "Argo", preco: "R$ 85.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/argo.webp"},
-        {id: 5, promocao: 0, marca: "Fiat", nome: "Cronos", preco: "R$ 94.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/cronos.webp"},
+        {id: 1, promocao: 25, marca: "Fiat", nome:["TITANO", " TURBO ENDURENCE"], preco: "R$ 219.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/titano.webp"},
+        {id: 2, promocao: 0, marca: "Fiat", nome: ["TORO"," VULCANO"], preco: "R$ 214.000,00", imgUrl: "https://ofertas.fiat.com.br/content/dam/fiat/products/226/1zp/1/2025/page/profile-webp/profile-176.webp"},
+        {id: 3, promocao: 25, marca: "Fiat", nome: ["MOBI"," LIKE 1.0"], preco: "R$ 73.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/mobi.webp"},
+        {id: 4, promocao: 25, marca: "Fiat", nome: ["ARGO"," DRIVE 1.3"], preco: "R$ 85.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/argo.webp"},
+        {id: 5, promocao: 0, marca: "Fiat", nome: ["CRONOS"," DRIVE 1.3"], preco: "R$ 94.000,00", imgUrl: "https://www.fiat.com.br/content/dam/fiat/nova-home/carrossel/cronos.webp"},
         ]) 
 
     return(
@@ -29,7 +29,7 @@ export default function Home() {
         >
 
         <div>
-        <img src ="https://www.designi.com.br/images/preview/10102113.jpg"/>
+        <img src ="img\DeWatermark.ai_1724366105517.png"/>
         </div>
 
         <div>

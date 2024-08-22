@@ -10,7 +10,7 @@ export default function ListarProdutos({lista}) {
     return (
       <div>
         <div className="precoOg">Preço original: {transformaNumber.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</div>
-        <div className="precoDesconto">Preço com desconto: {descontoDado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</div>
+        <div className="precoDesconto">Preço com desconto de {desconto}%: {descontoDado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</div>
       </div>
     );
   }else{
@@ -29,9 +29,9 @@ const adicionarPedido = (nome) => {
                 lista.map((produto) =>
                 <div id ="produte" key = {produto.id}>
                 <img id="carros" src={produto.imgUrl}/>
-                <h3 id="text">{produto.nome}-{produto.marca}</h3>
+                <h3 id="text">{produto.nome} -{produto.marca}</h3>
                 <h3 id="text">{precoFinal(produto.preco, produto.promocao)}</h3>
-                <button onClick={adicionarPedido}>Comprar</button>
+                <button id="buton"onClick={adicionarPedido}>Comprar</button>
                 </div>
                 )
               }

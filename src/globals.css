@@ -28,7 +28,17 @@
     background-color: rgb(0, 0, 0);
     list-style: none
   }
+
+  .precoOg {
+    text-decoration: line-through;
+    color: rgb(105, 105, 105);
+    font-weight: bold;
+  }
   
+  .precoDesconto {
+    font-weight: bold;
+  }
+
  li {
     color:white;
     display: inline-block;

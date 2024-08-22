@@ -7,7 +7,12 @@ export default function ListarProdutos({lista}) {
     if(desconto != 0){
     const transformaNumber = parseFloat(preco.replace('R$ ', '').replace('.', '').replace(',', '.'))
     const descontoDado = transformaNumber * desconto / 100
-      return descontoDado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    return (
+      <div>
+        <div className="precoOg">Preço original: {transformaNumber.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</div>
+        <div className="precoDesconto">Preço com desconto: {descontoDado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</div>
+      </div>
+    );
   }else{
     return preco
   }
